@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensions Légales | La Maestrie Du Berry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/nav.css">
+<script defer type="text/javascript" src="assets/nav.js"></script>
+
+</head>
+<body>
+
+    <div id="nav"></div>
+    <h2>Mentions Légales</h2>
+    <div>
+        <p>Le site web <a href="https://www.lamaestrie.org">www.lamaestrie.org</a> est la propriété de La Mastrie du Berry, Association Loi 1901.</p>
+        <p>Tel : <a href="tel:+33624419081">06 24 41 90 81</a></p>
+        <p>Courriel : <a href="mailto:lamaestrieduberry18@gmail.com">lamaestrieduberry18@gmail.com</a></p>
+    </div>
+    <div>
+        <h3>Directeur de publication</h3>
+        <p>NOM DE LA PERSONNE</p>
+    </div>
+    <div>
+        <h3>Hébergement</h3>
+        <p>
+            GitHub, Inc.
+            <br>Colin P. Kelly Jr. Street
+            <br>San Francisco, CA 94107
+            <br>États-Unis
+            <br>Site web : <a href="https://www.github.com">www.github.com</a>
+            <br>Telephone <i>(USA)</i> : <a href="tel:+14154486673">+1 (415) 448-6673</a>
+        </p>
+    </div>
+    <div>
+        <H3>Éditeur du site</H3>
+        <p>Valentin D.</p>
+        <!-- <h4>Team Starbit Light</h4> -->
+        
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+              fetch('assets/nav.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('nav').innerHTML = data);
+        });
+        </script>
+    
+</body>
+</html>

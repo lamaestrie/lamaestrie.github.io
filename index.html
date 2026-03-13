@@ -2,42 +2,58 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mastrie du Berry</title>
-    <link rel="stylesheet" href="/style.css">
-    <meta name="keywords" content="maestrie, berry, médiéval" />
+    <title>La Maestrie Du Berry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/nav.css">
+<script defer type="text/javascript" src="assets/nav.js"></script>
+
 </head>
 <body>
-    <h1>La Maestrie du Berry</h1>
-    <section class="webpage">
-        <img class="webpage" src="/assets/img/baniere.png" alt="">
-    </section>
-    <nav class="menu-nav">
-        <div class="list-nav">
-            <ul>
-                <li class="navmenu"><a href="#" class="alignimg">Accueil</a></li>
-                <li class="navmenu"><a href="/membres/" class="alignimg">Membres</a></li>
-                <li class="navmenu"><a href="/prestation" class="alignimg">Prestation</a></li>
-                <li class="navmenu"><a href="/recrutement/" class="alignimg">Recrutement</a></li>
-                <li class="navmenu"><a href="/" class="alignimg">Photo bientot</a></li>
-                <li class="navmenu"><a href="/information-médiéval/" class="alignimg">Information sur le médiéval</a></li>
-                <li class="navmenu"><a href="/contact/" class="alignimg">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section class="webpage">
-        
-        <h2>Troupe médiévale proche de BOURGES</h2>
-        <p>La maestrie du berry, association loi 1901, vous propose de vous faire</p>
-        <p>Remontez le temps et plongez dans une époque ou le fer repondait au fer!</p>
-        <p>À la demande des municipalités, comités des fêtes, organismes touristiques ou dans le cadre de soirées et animations à thème pour repas, nous vous faierons découvrir l'Univers Médievial au travers des saynètes, démonstrations et présentations de notre campement.</p>
-        <p>Passionnés d'équitation et de joutes, nous proposons également des animations équestres.</p>
+    <div id="nav"></div>
 
-        
-        <p><a href="/mentions-legal/">Mentions Legales</a></p>
-    </section>
+    <h2>Troupe médiévale du cher</h2>
+    <div>
+        <p>
+            La Maestrie du Berry, association loi 1901, vous propose de vous faire partager sa passion du Moyen âge.
+            <br>
+            <br>Remontez le temps et plongez dans l’époque où le fer répondait au fer !
+            <br>
+            <br>A la demande de municipalités, de comités des fêtes, d’organismes touristiques, … nous vous proposons : des soirées, des animations à thèmes, la présentation d’un campement médiéval où vous pourrez voir des armures, des armes et la vie des hommes. Passionnés d’équitation et de joutes, nous vous proposons également des animations équestres. Nous assurons lors de saynettes des démonstrations autour de la chevalerie : des combats à l’épée, des exercices équestres (Quintaine, Jeux des aiguillettes, Pavois, Javeline). Nous vous proposons également des ateliers de fabrication d’épée et de cotte de mailles.
+           
+           
+            <br> Dans le cadre de soirées et animations à thème pour un repas, nous vous ferons découvrir l’Univers Médiéval au travers de saynettes démonstrations et présentations de notre campement.
+            <br> 
+        </p>
+        <h2>Nos Membres</h2>
+        <p>Nos adhérents ont tous une grande connaissance du Moyen Age et de la reconstitution historique médiévale.
+        </p>
+        <img src="/assets/img/ImgAccuel.jpg" alt="">
+        <h2>Nous rejoindre</h2>
+        <p>Vous êtes passionnés par le moyen âge et vous souhaitez vivre une aventure à cette époque. Si vous êtes prêts à consacrer quelques week-end, l’été et dimanches l’hiver n’hésitez pas à nous rejoindre ! 
+            <br>La Maestrie du Berry est une association dont le siège social est à Saint Eloy de Gy <i>(18)</i>.
+            <br>Si vous habitez Bourges ou ses environs et que l’aventure vous intéresse vous pouvez nous contacter par mail <a href="mailto:lamaestrieduberry18@gmail.com">lamaestrieduberry18@gmail.com</a> ou par téléphone au <a href="tel:+33624419081">06 24 41 90 81</a>
+            <br>Bonne humeur exigée !
+            <br>Pensées médiévales
+        </p>
+    </div>
+
+    <footer style="text-align: center;">
+        <p>© La Maestrie du Berry</p>
+        <p><a href="legal-informations.html">Mensions Légales</a></p>
+
+        </footer>
+
+    <!-- <div id="Footer"></div> -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+              fetch('assets/nav.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('nav').innerHTML = data);
+        });
+        </script>
+    
 </body>
 </html>
-
