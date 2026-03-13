@@ -1,0 +1,71 @@
+@font-face {
+    font-family: font-1;
+    src: url(/assets/fonts/MedievalSharp-Regular.ttf);
+}
+
+h1 {
+    text-align: center;
+}
+
+.align {
+    vertical-align: top;
+    }
+
+body{
+    font-family: "font-1";
+    margin: 0px;
+    padding: 0px;
+}
+
+.webpage {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.navmenu:hover{
+    border-top: 5px solid #b3b3b3;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.navmenu2:hover{
+    border-top: 5px solid #b3b3b3;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+.list-nav{
+    display: table;
+    margin: 0 auto;
+}
+
+.alignimg {
+    position: relative;
+    top: 8px;
+}
