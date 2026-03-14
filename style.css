@@ -1,3 +1,10 @@
+:root {
+	--blue-color: #25358C;
+	--yello-collor: #C0C187;
+
+}
+
+
 @font-face {
     font-family: Font1;
     src: url(/assets/fonts/MedievalSharp-Regular.ttf);
@@ -36,6 +43,7 @@ h2 {
     text-align: center;
     font-family: Font1;
     padding-top: 10px;
+    color: var(--blue-color)
 }
 
 img {
