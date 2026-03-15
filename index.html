@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Maestrie Du Berry</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/html/nav.css">
+    <link rel="stylesheet" href="assets/html/footer.css">
 <script defer type="text/javascript" src="assets/nav.js"></script>
 
 <!-- CDN -->
@@ -49,12 +50,12 @@
     
     <script>
         document.addEventListener("DOMContentLoaded", (event) => {
-              fetch('assets/nav.html')
+              fetch('assets/html/nav.html')
                 .then(response => response.text())
                 .then(data => document.getElementById('nav').innerHTML = data);
         });
         document.addEventListener("DOMContentLoaded", (event) => {
-              fetch('assets/footer.html')
+              fetch('assets/html/footer.html')
                 .then(response => response.text())
                 .then(data => document.getElementById('footer').innerHTML = data);
         });
