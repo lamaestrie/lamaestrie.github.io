@@ -53,6 +53,13 @@ p {
   margin: 0 auto;
 }
 
+ul {
+  padding: 0 30px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 h3 {
   font-family: TitleFont;
   padding: 0 10px;
@@ -81,4 +88,42 @@ h4 {
 	position: relative;
 	background: transparent url(/assets/img/ImgAccuel.jpg) 3px 3px no-repeat;
 	opacity: 0.3;
+}
+
+/* PRESTATIONS ZONE */
+.prestations {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prestations .content {
+  flex: 0 0 750px;
+  max-width: 750px;
+}
+
+.prestations img {
+  flex: 0 0 auto;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .prestations {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .prestations .content {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  .prestations img {
+    max-width: 100%;
+    height: auto;
+  }
 }
