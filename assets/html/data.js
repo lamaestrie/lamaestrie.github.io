@@ -4,7 +4,7 @@ async function loadChiffres() {
   const text = await response.text();
   const lines = text.trim().split('\n');
   const data = lines.slice(1).map(line => {
-    const [label, value] = line.split(',');
+    const [label, value] = line.split(';');
     return { label, value: parseInt(value, 10) };
   });
 
