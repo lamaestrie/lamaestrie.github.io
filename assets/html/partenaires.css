@@ -1,0 +1,25 @@
+/* Banderole de partenaires */
+.banderole-partenaires {
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*.banderole-track {
+  display: flex;
+  gap: 40px;
+  animation: defilement 20s linear infinite;
+}*/
+
+.banderole-track img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(80%);
+  transition: filter 0.3s;
+}
+
+.banderole-track img:hover {
+  filter: grayscale(0%);
+}

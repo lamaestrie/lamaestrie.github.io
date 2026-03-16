@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maestrie Du Berry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/html/nav.css">
+    <link rel="stylesheet" href="assets/html/footer.css">
+<script defer type="text/javascript" src="assets/html/nav.js"></script>
+
+<!-- CDN -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="nav"></div>
+    <img src="/assets/img/ImgAccuel.jpg" alt="Membres de la troupe" class="main-img">
+    <h2>Troupe médiévale du cher</h2>
+    <div>
+        <p>
+            La Maestrie du Berry, association loi 1901, vous propose de vous faire partager sa passion du Moyen âge.
+            <br>
+            <br>Remontez le temps et plongez dans l’époque où le fer répondait au fer !
+            <br>
+            <br>A la demande de municipalités, de comités des fêtes, d’organismes touristiques, … nous vous proposons : des soirées, des animations à thèmes, la présentation d’un campement médiéval où vous pourrez voir des armures, des armes et la vie des hommes. Passionnés d’équitation et de joutes, nous vous proposons également des animations équestres. Nous assurons lors de saynettes des démonstrations autour de la chevalerie : des combats à l’épée, des exercices équestres (Quintaine, Jeux des aiguillettes, Pavois, Javeline). Nous vous proposons également des ateliers de fabrication d’épée et de cotte de mailles.
+           
+           
+            <br> Dans le cadre de soirées et animations à thème pour un repas, nous vous ferons découvrir l’Univers Médiéval au travers de saynettes démonstrations et présentations de notre campement.
+            <br> 
+        </p>
+        <h2>Nos Membres</h2>
+        <p>Nos adhérents ont tous une grande connaissance du Moyen Age et de la reconstitution historique médiévale.
+        </p>
+        
+        <h2>Nous rejoindre</h2>
+        <p>Vous êtes passionnés par le moyen âge et vous souhaitez vivre une aventure à cette époque. Si vous êtes prêts à consacrer quelques week-end, l’été et dimanches l’hiver n’hésitez pas à nous rejoindre ! 
+            <br>La Maestrie du Berry est une association dont le siège social est à Saint Eloy de Gy <i>(18)</i>.
+            <br>Si vous habitez Bourges ou ses environs et que l’aventure vous intéresse vous pouvez nous contacter par mail <a href="mailto:lamaestrieduberry18@gmail.com">lamaestrieduberry18@gmail.com</a> ou par téléphone au <a href="tel:+33624419081">06 24 41 90 81</a>
+            <br>Bonne humeur exigée !
+            <br>Pensées médiévales
+        </p>
+    </div>
+
+    
+
+    <div id="footer"></div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+              fetch('assets/html/nav.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('nav').innerHTML = data);
+        });
+        document.addEventListener("DOMContentLoaded", (event) => {
+              fetch('assets/html/footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        });
+        </script>
+    
+</body>
+</html>
